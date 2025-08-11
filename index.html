@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Rajendra Gandhi - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Rishi Rajendra Gandhi</h1>
+        <p>Astrobiologist • Marine Microbiologist • Ex-iGEMer • Analog Astronaut</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="presentation.html">Presentations</a>
+        <a href="Project.html">Projects</a>
+        <a href="Publication.html">Publications</a>
+        <a href="Blog.html">Blog</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="Rishi_Gandhi_Photo.png" alt="Rishi Rajendra Gandhi" style="width: 300px; height: 300px; border-radius: 70%; object-fit: cover; display: block; margin: 0 auto;">
+            </div>
+
+            <div class="hero-text" style="text-align: center;">
+                <h2>Hello, I'm Rishi</h2>
+                <p>I'm a passionate forever student working at the intersection of bioprospecting and troubleshooting. With expertise in multiple disciplines, I create solutions that make a meaningful impact.</p>
+            </div>
+                
+            <div class="social-links" style="display: flex; gap: 1rem; margin-top: 2rem; justify-content: center;">
+                <a href="https://github.com/mysteriousLUCA" target="_blank" rel="noopener noreferrer" style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--secondary-color); display: flex; align-items: center; justify-content: center; text-decoration: none; color: var(--text-color); transition: transform 0.3s ease, background-color 0.3s ease;">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gandhirishi/" target="_blank" rel="noopener noreferrer" style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--secondary-color); display: flex; align-items: center; justify-content: center; text-decoration: none; color: var(--text-color); transition: transform 0.3s ease, background-color 0.3s ease;">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.researchgate.net/profile/Rishi-Gandhi-2" target="_blank" rel="noopener noreferrer" style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--secondary-color); display: flex; align-items: center; justify-content: center; text-decoration: none; color: var(--text-color); transition: transform 0.3s ease, background-color 0.3s ease;">
+                    <i class="fab fa-researchgate"></i>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>About Me</h2>
+            <p style="text-align: justify;">Passionate about exploring the mysteries of nature, I've been captivated by science from a young age. My curiosity began with the allure of natural phenomena—rainbows, magnets, the intricacies of life—and expanded to deeper questions about life's origins, like Abiogenesis versus Panspermia. My academic journey at IISER provided the ideal foundation to dive into these compelling topics, and my current role at NIO allows me to further indulge in discussions on astrobiology and the possibilities of extraterrestrial life.</p> <br>
+            <p style="text-align: justify;">When I'm not researching, you can find me reading the latest science news, bike riding, or experimenting with new cooking recipes.</p>
+        </section>
+
+        <section>
+            <h2>Current Focus</h2>
+            <p style="text-align: justify;">I'm currently working on developing scalable solutions for complex data problems, with a particular emphasis on making advanced machine learning techniques more accessible to non-technical users.</p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Visitor Counter -->
+        <div class="visitor-counter">
+            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+            <span id="visitor-count">...</span>
+            <span class="vc-label">visits</span>
+        </div>
+
+        <p>© 2025 Rishi Rajendra Gandhi. All rights reserved.</p>
+    </footer>
+
+    <!-- Visitor Counter Script (CountAPI) -->
+    <script>
+        (function () {
+            const countEl = document.getElementById('visitor-count');
+            if (!countEl) return;
+
+            // Use hostname as namespace when available (unique per domain), fall back to a static string.
+            const namespace = (location.hostname || 'rishi-rajendra-gandhi').replace(/\W+/g, '-').toLowerCase();
+
+            // Use a single site-wide key so you can reuse this on other pages to track total visits.
+            const key = 'site-total';
+
+            // Avoid double-counting within the same browser session
+            const visitedFlag = `visited-${namespace}-${key}`;
+            const endpoint = sessionStorage.getItem(visitedFlag) ? 'get' : 'hit';
+
+            fetch(`https://api.countapi.xyz/${endpoint}/${encodeURIComponent(namespace)}/${encodeURIComponent(key)}`)
+                .then(r => r.json())
+                .then(data => {
+                    if (data && typeof data.value === 'number') {
+                        countEl.textContent = data.value.toLocaleString();
+                        if (endpoint === 'hit') sessionStorage.setItem(visitedFlag, '1');
+                    } else {
+                        countEl.textContent = '—';
+                    }
+                })
+                .catch(() => {
+                    countEl.textContent = '—';
+                });
+        })();
+    </script>
+</body>
+</html>

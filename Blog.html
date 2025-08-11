@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Rajendra Gandhi - Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .blog-item {
+            background-color: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            max-width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .blog-title a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .blog-title a:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rishi Rajendra Gandhi</h1>
+        <p>Astrobiologist • Marine Microbiologist • Ex-iGEMer • Analog Astronaut</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="presentation.html">Presentations</a>
+        <a href="Project.html">Projects</a>
+        <a href="Publication.html">Publications</a>
+        <a href="Blog.html" class="active">Blog</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Blog</h2>
+            <div class="blog-list">
+                <div class="blog-item">
+                    <h3 class="blog-title"><a href="blog1.html">Extreme biomining from Asteroids</a></h3>
+                    <p class="blog-summary">Exploring answers mining perious metals from Asteroids by Polyexterimophiles.</p>
+                </div>
+                <div class="blog-item">
+                    <h3 class="blog-title"><a href="blog2.html">What is Life? A Scientific Perspective</a></h3>
+                    <p class="blog-summary">Life?</p>
+                </div>
+                <div class="blog-item">
+                    <h3 class="blog-title"><a href="blog3.html">CRISPR & Gene Editing: Advances in Gene Therapy, Synthetic Biology, and Disease Resistance</a></h3>
+                    <p class="blog-summary">Discussing the ethical considerations and responsibilities in the development of Gene Editing.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Rishi Rajendra Gandhi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
