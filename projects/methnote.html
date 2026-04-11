@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methnote</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .blog-post {
+            background-color: rgba(153, 74, 80, 0.8);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 1200px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .blog-post h2,
+        .blog-post h3,
+        .blog-post p {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rishi Rajendra Gandhi</h1>
+        <p>Astrobiologist • Marine Microbiologist • Ex-iGEMer • Analog Astronaut</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../presentation.html">Presentations</a>
+        <a href="../Project.html" class="active">Projects</a>
+        <a href="../Publication.html">Publications</a>
+        <a href="../Workshops-Courses.html">Workshops & Courses</a>
+        <a href="../skills.html">Skills</a>
+        <a href="../Blog.html">Blog</a>
+    </nav>
+
+    <main>
+        <section class="blog-post">
+            <h2 class="blog-title">MethNote: A Prototype Biosensor for Methane Detection Using Engineered Pichia pastoris</h2>
+            <h3 class="blog-title"><p>Key takeaway</p></h3>
+<p style="text-align: justify;">Team MethNote from IISER Bhopal developed an innovative methane biosensor by expressing soluble methane monooxygenase (sMMO) from Methylococcus capsulatus in Pichia pastoris, linking methane detection to fluorescent reporter gene expression for environmental monitoring applications.</p>
+
+            <h3 class="blog-title"><p>Abstract</p></h3>
+<p style="text-align: justify;">Environmental monitoring of methane is critical for safety, industrial applications, and climate change mitigation. Methane presents significant hazards as a flammable, toxic greenhouse gas with a global warming potential 25 times greater than CO₂. Current detection methods face limitations in cost, portability, and environmental friendliness. This report presents MethNote, a prototype biosensor developed by the IISER Bhopal iGEM team in 2018, which employs genetically engineered Pichia pastoris expressing soluble methane monooxygenase (sMMO) from the methanotrophic bacterium Methylococcus capsulatus. The system links methane uptake to reporter gene expression under methanol-inducible AOX promoter control, creating a robust, field-applicable detection platform with potential applications in environmental monitoring, industrial safety, and biofuel production.</p>
+
+<h3 class="blog-title"><p>Introduction</p></h3>
+
+<p style="text-align: justify;">Methane represents a critical environmental and safety challenge in modern industrial contexts. The gas's high flammability and toxicity create substantial occupational hazards in biogas plants, sewage treatment facilities, and industrial methane distribution systems. The United States oil and gas industry alone releases an estimated 13 million metric tons of methane annually, highlighting the scale of leakage problems across infrastructure spanning over 2 million miles of pipelines.</p>
+
+<p style="text-align: justify;">Traditional methane detection systems face significant limitations including high costs, maintenance requirements, limited portability, and environmental concerns. The necessity for robust, eco-friendly, cost-effective detection methods drives innovation toward biological sensing approaches.</p>
+
+<p style="text-align: justify;">Methanotrophic bacteria naturally metabolize methane through methane monooxygenase (MMO) enzymes, which catalyze the oxidation of methane to methanol. This biological pathway provides the foundation for biosensor development.</p>
+
+<p style="text-align: justify;">Pichia pastoris serves as an ideal chassis organism for methane biosensor applications due to its well-established genetic tools, robust growth characteristics, and native methanol metabolism pathways. By introducing bacterial sMMO systems into P. pastori methane can be detected through coupled reporter systems.</p>
+
+<div style="text-align: center; margin: 20px auto;">
+    <img src="../images/projects/methnote/process.png" style="width: 100%; max-width: 800px; height: auto; aspect-ratio: 16/9; object-fit: cover;">
+</div>
+
+<h3 class="blog-title"><p>Materials and Methods</p></h3>
+
+<h4>Genetic Engineering Approach</h4>
+<p style="text-align: justify;">
+  • The MethNote project utilized six subunits of soluble methane monooxygenase (sMMO) from Methylococcus capsulatus: sMMO B, C, D, X, Y, and Z<br>
+  • These components were cloned into expression vectors under the control of methanol-inducible AOX promoters<br>
+  • Two parallel strategies were employed: SOEing PCR for gene fusion and viral 2A peptide sequences for polycistronic expression<br>
+  • The iLOV fluorescent protein was selected as the reporter due to its oxygen-independent fluorescence and rapid maturation<br>
+  • Antibiotic resistance markers (Zeocin and Hygromycin) facilitated selection of transformed P. pastoris strains
+</p>
+
+<h4>Experimental Validation</h4>
+<p style="text-align: justify;">
+  • Antibiotic sensitivity assays confirmed minimum inhibitory concentrations for selection<br>
+  • PCR amplification verified successful cloning of sMMO gene components<br>
+  • SOEing PCR demonstrated successful fusion of target sequences<br>
+  • Transformation protocols were optimized for P. pastoris competent cell preparation<br>
+  • Preliminary methane exposure tests assessed reporter activation in engineered strains
+</p>
+
+<h3 class="blog-title"><p>Results and Discussion</p></h3>
+
+<h4>Metabolic Modeling and Pathway Analysis</h4>
+<p style="text-align: justify;">Comprehensive metabolic modeling validated the theoretical functionality of the methane sensing pathway, incorporating:</p>
+<p style="text-align: justify;">
+  • Transcription and translation kinetics for sMMO genes<br>
+  • Michaelis-Menten enzyme kinetics for methane conversion<br>
+  • NADH cofactor requirements and regeneration<br>
+  • Methanol-induced iLOV expression<br>
+  • Protein degradation and cellular methanol consumption
+</p>
+
+<h4 class="blog-title">Mechanistic Insights</h4>
+<p style="text-align: justify;">The sMMO enzyme system requires coordinated expression of six subunits forming a functional complex capable of methane hydroxylation. The hydroxylase component (MMOH) containing α₂β₂γ₂ architecture provides the catalytic site, while reductase (MMOR) and regulatory proteins (MMOB) facilitate electron transfer and substrate binding.</p>
+
+<p style="text-align: justify;">Successful methane conversion generates methanol, which induces AOX promoter-driven reporter gene expression in P. pastoris. This coupling mechanism provides quantitative methane detection through fluorescence measurement, with sensitivity potentially enhanced through reporter optimization and signal amplification strategies.</p>
+
+<p style="text-align: justify;">MethNote presents significant potential for real-time methane monitoring in various contexts including industrial facilities, landfills, agricultural sites, and natural gas infrastructure. The biosensor's biological nature offers advantages in environmental compatibility and reduced electronic complexity compared to conventional sensors.</p>
+
+<h3 class="blog-title"><p>Applications and Future Directions</p></h3>
+
+<h4 class="blog-title">Environmental Monitoring Applications</h4>
+<p style="text-align: justify;">Beyond detection applications, engineered P. pastoris strains could serve dual purposes in methane sequestration and methanol biofuel production. Controlled deployment in strategic locations could contribute to greenhouse gas reduction while generating valuable chemical feedstocks.</p>
+
+<h4 class="blog-title">Optimization Strategies</h4>
+<p style="text-align: justify;">Future development directions include eliminating antibiotic resistance markers through Cre-LoxP recombination systems, optimizing sMMO subunit expression ratios, enhancing reporter sensitivity, and developing colorimetric detection alternatives for field applications.</p>
+
+<h4 class="blog-title">Commercialization Potential</h4>
+<p style="text-align: justify;">The project's development under IISER Bhopal's Innovation and Incubation Cell suggests potential startup opportunities. Commercial applications could span environmental consulting, industrial safety monitoring, and research instrumentation markets.</p>
+
+<h3 class="blog-title"><p>Conclusions</p></h3>
+
+<p style="text-align: justify;">The MethNote project successfully demonstrated proof-of-concept for biological methane detection using engineered Pichia pastoris expressing bacterial sMMO systems. 
+
+<p style="text-align: justify;"> Key achievements include:</p>
+<p style="text-align: justify;">1. Successful genetic engineering of P. pastoris with functional sMMO expression constructs using both SOEing PCR and viral 2A peptide strategies.</p>
+
+<p style="text-align: justify;">2. Innovative reporter coupling linking methane detection to fluorescent protein expression through methanol-inducible promoter systems.</p>
+
+<p style="text-align: justify;">3. Comprehensive system modeling validating theoretical pathway functionality and providing quantitative predictions for sensor performance.</p>
+
+<p style="text-align: justify;">4. Practical implementation strategies addressing antibiotic resistance, protein expression optimization, and field deployment considerations.</p>
+
+<p style="text-align: justify;">5. Broad application potential spanning environmental monitoring, industrial safety, climate change mitigation, and biofuel production sectors.</p>
+
+<p style="text-align: justify;">The project represents a significant advancement in biological methane sensing technology, offering an environmentally friendly, cost-effective alternative to conventional detection methods. Future work must focus on empirical sensor performance characterization, sensitivity optimization, and field testing under realistic operating conditions. The foundation established by Team MethNote provides a solid platform for advancing biological methane detection technology toward commercial viability.</p>
+
+<h3 class="blog-title"><p>References</p></h3>
+
+<ol style="text-align: justify; color: #ffffff;">
+    <li>Wahlen M. The global methane cycle. Annual Review of Earth and Planetary Sciences. 1993;21(1):407-426.</li>
+    <li>Boucher O, Friedlingstein P, Collins B, Shine KP. The indirect global warming potential and global temperature change potential due to methane oxidation. Environmental Research Letters. 2009;4:044007.</li>
+    <li>Stainthorpe AC, Lees V, Salmond GP, Dalton H, Murrell JC. The methane monooxygenase gene cluster of Methylococcus capsulatus (Bath). Gene. 1990;91(1):27-34.</li>
+    <li>Merkx M, Kopp DA, Sazinsky MH, Blazyk JL, Müller J, Lippard SJ. Dioxygen activation and methane hydroxylation by soluble methane monooxygenase: a tale of two irons and three proteins. Angewandte Chemie International Edition. 2001;40(15):2782-2807.</li>
+    <li>Schwartz J, Plumer B. The Natural Gas Industry Has a Leak Problem. The New York Times. 2018 June 21.</li>
+    <li>Environmental Protection Agency. Inventory of US greenhouse gas emissions and sinks: 1990-2016. EPA 430-R-18-003. Washington DC: EPA; 2018.</li>
+    <li>Chepkemoi J. Top 20 Countries By Length Of Pipeline. World Atlas. 2017 April 25.</li>
+    <li>Poma N, Vivaldi F, Bonini A, Salvo P, Di Francesco F. Biosensing systems for the detection and quantification of methane: a review. Biosensors. 2023;13(7):751.</li>
+</ol>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rishi Rajendra Gandhi</h3>
+                <p>PhD Student in Microbial Ecology Laboratory at CSIR National Institute of Oceanography, Goa. Dedicated to understanding and protecting marine ecosystems through innovative research.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Research Areas</h3>
+                <ul>
+                    <li>Microbiology</li>
+                    <li>Biostatistics</li>
+                    <li>Bioinformatics</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> gandhirishi.rg@yahoo.com</p>
+                <div class="social-icons">
+                    <a href="https://github.com/mysteriousLUCA" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gandhirishi/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.researchgate.net/profile/Rishi-Gandhi-2" target="_blank" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://orcid.org/0000-0001-6173-9237" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Rishi Rajendra Gandhi. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
